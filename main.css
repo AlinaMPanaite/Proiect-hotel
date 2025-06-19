@@ -1,0 +1,214 @@
+
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --light-color: #ecf0f1;
+    --dark-color: #34495e;
+    --gradient-start: #2980b9;
+    --gradient-end: #3498db;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #000000;
+    color: var(--dark-color);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+
+
+.container {
+    max-width: 900px;
+    width: 100%;
+    margin: 10 auto;
+    padding: 50px;
+}
+
+.hotel-logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.hotel-logo h1 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+      font-size: 48px;
+  font-weight: bold;
+  background: linear-gradient(270deg, #86a7c8, #2980b9, #1a237e, #2980b9, #86a7c8); /* roșu, verde, albastru, roșu */
+  background-size: 600% 600%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: colorShift 5s linear infinite;
+    
+}
+@keyframes colorShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }}
+.hotel-logo p {
+    color: rgb(113, 113, 113);
+    font-size: 1.1rem;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    padding: 30px;
+}
+
+.tab-buttons {
+    display: flex;
+    border-bottom: 1px solid #eee;
+    gap: 45px; /* Adds space between the buttons */
+
+}
+
+.tab-button {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    background-color: #f8f9fa;
+    color: rgb(172, 172, 172);
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    outline: none;
+     /* If you want to manually control space for each button */
+    /* margin-right: 20px;  */
+}
+
+.tab-button:hover {
+    background-color: #e9ecef;
+    color:white;
+}
+
+.tab-button.active {
+    background: linear-gradient(to right, var(--gradient-start), var(--gradient-end));
+    color: white;
+}
+
+.tab-content {
+    padding: 30px;
+}
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--dark-color);
+}
+
+input, select {
+    width: 100%;
+    padding: 12px 15px 12px 40px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+input:focus, select:focus {
+    border-color: var(--secondary-color);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+.form-group i {
+    position: absolute;
+    top: 50px;
+    left: 15px;
+    color: #aaa;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(to left, #1a237e , #2980b9);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: linear-gradient(to right, #2573a7, #2980b9);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(41, 128, 185, 0.3);
+}
+
+.admin-password {
+    display: none;
+}
+
+.error {
+    background-color: #ffebee;
+    color: #c62828;
+    padding: 12px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.success {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    padding: 12px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+        margin: 20px;
+    }
+    
+ 
+}

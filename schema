@@ -1,0 +1,48 @@
+hotel/
+├── includes/
+│   ├── config.php
+│   ├── auth_functions.php
+│   ├── header.php
+│   ├── footer.php
+│   ├── login_form.php
+│   └── register_form.php
+├── js/
+│   └── scripts.js
+├── styles/
+│   └── main.css
+├── index.php
+└── login.php
+
+hotel/
+├── config/
+│   └── db_connect.php
+├── includes/
+│   ├── room_functions.php
+│   ├── customer_functions.php
+│   ├── reservation_functions.php
+│   ├── service_functions.php
+│   ├── employee_functions.php
+│   ├── user_functions.php
+├── assets/
+│   ├── css/
+│   │   └── admin.css
+│   └── js/
+│       └── admin.js
+├── templates/
+│   ├── header.php
+│   ├── nav.php
+│   ├── dashboard.php
+│   ├── rooms.php
+│   ├── customers.php
+│   ├── reservations.php
+│   ├── services.php
+│   ├── employees.php
+│   ├── users.php
+│   └── modals/
+│       ├── room_modal.php
+│       ├── customer_modal.php
+│       ├── reservation_modal.php
+│       ├── service_modal.php
+│       ├── employee_modal.php
+│       ├── user_modal.php
+├── admin.php
